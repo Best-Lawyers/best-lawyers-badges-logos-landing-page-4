@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1A1F25" />
+  <meta name="description" content="Buy the official Best Lawyers badge. License badges and logos for your website, email signature, social media, marketing materials, and approved advertising." />
+  <meta property="og:title" content="Official Best Lawyers Badges and Logos" />
+  <meta property="og:description" content="Put your recognition where clients can see it. License official Best Lawyers badges and logos." />
+  <meta property="og:type" content="website" />
+  <title>Official Badges and Logos | Best Lawyers</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Canonical URL: add the final absolute URL before production deployment. -->
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+
+  <style>
+    /* ============================================================
+       TOKENS
+       Approved Best Lawyers landing palette and brand type hooks.
+       Licensed Optima and Gentleman files are wired in
+       assets/fonts/fonts.css. Fallback stacks keep the build
+       reviewable before the licensed files are dropped in.
+       ============================================================ */
+    :root {
+      --white: #FFFFFF;
+      --off: #F3F3F3;
+      --charcoal: #1A1F25;
+      --charcoal-2: #232A33;
+      --charcoal-3: #2C333D;
+      --ink: #1A1F25;
+      --slate: #545C66;
+      --slate-soft: #7A828C;
+      --gold: #C9A35B;
+      --gold-deep: #AF863A;
+      --gold-soft: rgba(201, 163, 91, 0.16);
+      --coral: #C24A38;
+      --line: rgba(26, 31, 37, 0.12);
+      --line-strong: rgba(26, 31, 37, 0.2);
+      --line-dark: rgba(255, 255, 255, 0.14);
+      --shadow-sm: 0 10px 30px rgba(26, 31, 37, 0.07);
+      --shadow-md: 0 24px 60px rgba(26, 31, 37, 0.11);
+      --shadow-lg: 0 34px 90px rgba(26, 31, 37, 0.18);
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --font-display: "Gentleman", "Gill Sans", "Gill Sans MT", "Seravek", "Candara", "Segoe UI", sans-serif;
+      --font-sans: "Optima", "Optima Nova", "Candara", "Gill Sans", "Gill Sans MT", "Segoe UI", "Helvetica Neue", sans-serif;
+      --wrap: 1140px;
+      --gutter: clamp(20px, 4vw, 48px);
+      --header-h: 68px;
+    }
+
+    /* ============================================================
+       BASE
+       ============================================================ */
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    html, body { overflow-x: clip; }
+    body {
+      margin: 0;
+      background: var(--white);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration: none; }
+    img, svg { display: block; max-width: 100%; height: auto; }
+    button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+    h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); font-weight: 600; line-height: 1.12; margin: 0; letter-spacing: 0.002em; }
+    p { margin: 0; }
+    :focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 3px; border-radius: 2px; }
+    ::selection { background: var(--gold-soft); }
+
+    .wrap { width: min(var(--wrap), calc(100% - var(--gutter) * 2)); margin-inline: auto; }
+    .section { padding-block: clamp(76px, 9.5vw, 128px); }
+    .section-off { background: var(--off); }
+    .section-dark { background: var(--charcoal); color: var(--white); }
+    section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
+
+    .h-display {
+      font-size: clamp(30px, 4.2vw, 46px);
+      max-width: 21ch;
+      text-wrap: balance;
+    }
+    .lede {
+      margin-top: 18px;
+      max-width: 62ch;
+      font-size: clamp(16.5px, 1.5vw, 18.5px);
+      color: var(--slate);
+    }
+    .section-dark .lede { color: rgba(255, 255, 255, 0.72); }
+
+    .skip-link {
+      position: fixed; left: 14px; top: 12px; z-index: 300;
+      transform: translateY(-160%);
+      background: var(--white); color: var(--charcoal);
+      padding: 10px 14px; border-radius: 8px; box-shadow: var(--shadow-sm);
+      transition: transform 180ms ease;
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    /* ============================================================
+       BUTTONS
+       ============================================================ */
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--font-sans); font-weight: 600; font-size: 15.5px;
+      letter-spacing: 0.01em;
+      padding: 15px 26px; border-radius: 999px;
+      transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease, color 200ms ease;
+      will-change: transform;
+    }
+    .btn .arrow { transition: transform 220ms ease; }
+    .btn:hover .arrow { transform: translateX(3px); }
+    .btn-gold {
+      background: var(--gold-deep); color: var(--white);
+      box-shadow: 0 12px 28px rgba(175, 134, 58, 0.32);
+    }
+    .btn-gold:hover { background: #9d7731; transform: translateY(-1px); }
+    .section-dark .btn-gold, .site-header .btn-gold, .final .btn-gold {
+      background: var(--gold); color: var(--charcoal);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+    }
+    .section-dark .btn-gold:hover, .site-header .btn-gold:hover, .final .btn-gold:hover { background: #d6b26c; }
+    .btn-ghost {
+      color: var(--charcoal); font-weight: 600;
+      padding: 15px 6px; border-radius: 4px;
+      border-bottom: 1px solid var(--line-strong);
+    }
+    .btn-ghost:hover { border-color: var(--gold-deep); color: var(--gold-deep); }
+
+    /* ============================================================
+       HEADER  (charcoal band, supplied white logo)
+       ============================================================ */
+    .site-header {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--charcoal);
+      transition: box-shadow 240ms ease;
+    }
+    .site-header.scrolled { box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28); }
+    .nav-wrap {
+      height: var(--header-h);
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .brand img { height: 24px; width: auto; }
+    .nav-links { display: flex; align-items: center; gap: clamp(16px, 2.4vw, 30px); }
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.72); font-size: 14.5px; font-weight: 500;
+      padding: 6px 2px; position: relative; transition: color 180ms ease;
+    }
+    .nav-links a::after {
+      content: ""; position: absolute; left: 0; right: 100%; bottom: 0;
+      height: 1px; background: var(--gold); transition: right 240ms ease;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover::after { right: 0; }
+    .site-header .btn { padding: 11px 20px; font-size: 14px; }
+    @media (max-width: 920px) { .nav-links { display: none; } }
+
+    /* ============================================================
+       HERO
+       Motion language: cinematic settle. Headline lines rise in
+       sequence, the badge composition drifts in once, then only
+       gentle scroll parallax remains.
+       ============================================================ */
+    .hero {
+      background: linear-gradient(180deg, var(--off) 0%, var(--white) 78%);
+      padding-block: clamp(64px, 8vw, 110px) clamp(70px, 8vw, 112px);
+      overflow: clip;
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+      gap: clamp(36px, 5vw, 72px); align-items: center;
+    }
+    .hero h1 {
+      font-size: clamp(38px, 5.3vw, 62px);
+      max-width: 15ch;
+      text-wrap: balance;
+    }
+    .hero h1 .line { display: block; }
+    .hero .lede { max-width: 46ch; }
+    .hero-ctas { margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 22px; }
+    .hero-proof {
+      margin-top: 34px; padding-top: 22px;
+      border-top: 1px solid var(--line);
+      display: flex; flex-wrap: wrap; gap: 10px 28px;
+      font-size: 13.5px; color: var(--slate);
+    }
+    .hero-proof span { display: inline-flex; align-items: center; gap: 9px; }
+    .hero-proof i {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--gold-deep); flex: none; font-style: normal;
+    }
+
+    /* Hero visual: absolute-positioned badge composition container */
+    .hero-visual {
+      position: relative;
+      min-height: clamp(360px, 44vw, 490px);
+    }
+    .hero-halo {
+      position: absolute; inset: -10% -6%; z-index: 0; pointer-events: none;
+      background: radial-gradient(58% 52% at 52% 46%, var(--gold-soft) 0%, rgba(201, 163, 91, 0) 72%);
+    }
+
+    /* ── Badge elements ────────────────────────────────────────── */
+    /* LFOTY gold shield: the centrepiece, front and slightly left */
+    .hb-gold {
+      position: absolute;
+      width: clamp(168px, 19vw, 222px);
+      top: 4%; left: 8%;
+      z-index: 3;
+      filter: drop-shadow(0 32px 54px rgba(26, 31, 37, 0.28));
+    }
+    /* National silver shield: secondary, upper-right, gently tilted */
+    .hb-silver {
+      position: absolute;
+      width: clamp(140px, 15.5vw, 186px);
+      top: 0%; right: 5%;
+      z-index: 2;
+      transform: rotate(7deg);
+      filter: drop-shadow(0 22px 40px rgba(26, 31, 37, 0.18));
+    }
+    /* Regional blue shield: tertiary, lower-right, behind the others */
+    .hb-blue {
+      position: absolute;
+      width: clamp(116px, 13vw, 156px);
+      bottom: 7%; right: 14%;
+      z-index: 1;
+      transform: rotate(-5deg);
+      filter: drop-shadow(0 16px 30px rgba(26, 31, 37, 0.14));
+    }
+    /* LOTY 2026 circular badge: accent, lower-left, in front */
+    .hb-loty {
+      position: absolute;
+      width: clamp(112px, 12.5vw, 152px);
+      bottom: 4%; left: 2%;
+      z-index: 4;
+      transform: rotate(-8deg);
+      filter: drop-shadow(0 18px 32px rgba(26, 31, 37, 0.30));
+    }
+    /* BL lawyer logo: small floating card, mid-right */
+    .hb-logo-card {
+      position: absolute;
+      right: 2%; top: 52%;
+      z-index: 5;
+      background: var(--white);
+      border-radius: var(--radius-sm);
+      padding: 13px 18px;
+      box-shadow: 0 18px 42px rgba(26, 31, 37, 0.18);
+    }
+    .hb-logo-card img {
+      width: clamp(126px, 14vw, 170px);
+      display: block;
+    }
+
+    /* ── Entrance animations ───────────────────────────────────── */
+    .js .hero .line { opacity: 0; transform: translateY(26px); transition: opacity 640ms ease, transform 640ms cubic-bezier(.22,.7,.24,1); }
+    .js .hero .lede, .js .hero-ctas, .js .hero-proof { opacity: 0; transform: translateY(18px); transition: opacity 620ms ease, transform 620ms cubic-bezier(.22,.7,.24,1); }
+    /* Each badge settles from its final resting transform */
+    .js .hb-gold  { opacity: 0; transform: translateY(32px); transition: opacity 860ms ease 200ms, transform 860ms cubic-bezier(.2,.66,.22,1) 200ms; }
+    .js .hb-silver { opacity: 0; transform: translateY(26px) rotate(7deg); transition: opacity 760ms ease 290ms, transform 760ms cubic-bezier(.2,.66,.22,1) 290ms; }
+    .js .hb-blue   { opacity: 0; transform: translateY(22px) rotate(-5deg); transition: opacity 680ms ease 380ms, transform 680ms cubic-bezier(.2,.66,.22,1) 380ms; }
+    .js .hb-loty   { opacity: 0; transform: translateY(20px) rotate(-8deg); transition: opacity 700ms ease 460ms, transform 700ms cubic-bezier(.2,.66,.22,1) 460ms; }
+    .js .hb-logo-card { opacity: 0; transform: translateY(16px); transition: opacity 580ms ease 540ms, transform 580ms cubic-bezier(.22,.7,.24,1) 540ms; }
+
+    .hero.is-in .line, .hero.is-in .lede, .hero.is-in .hero-ctas, .hero.is-in .hero-proof { opacity: 1; transform: none; }
+    .hero.is-in .hb-gold, .hero.is-in .hb-logo-card { opacity: 1; transform: none; }
+    .hero.is-in .hb-silver { opacity: 1; transform: rotate(7deg); }
+    .hero.is-in .hb-blue   { opacity: 1; transform: rotate(-5deg); }
+    .hero.is-in .hb-loty   { opacity: 1; transform: rotate(-8deg); }
+
+    .hero.is-in .line:nth-child(1) { transition-delay: 60ms; }
+    .hero.is-in .line:nth-child(2) { transition-delay: 170ms; }
+    .hero.is-in .lede { transition-delay: 300ms; }
+    .hero.is-in .hero-ctas { transition-delay: 400ms; }
+    .hero.is-in .hero-proof { transition-delay: 500ms; }
+
+    @media (max-width: 880px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-visual { min-height: clamp(280px, 70vw, 360px); margin-top: 12px; }
+      .hb-gold   { width: clamp(130px, 30vw, 175px); left: 6%; top: 5%; }
+      .hb-silver { width: clamp(108px, 24vw, 148px); right: 4%; top: 1%; }
+      .hb-blue   { width: clamp(90px, 20vw, 122px); right: 14%; bottom: 6%; }
+      .hb-loty   { width: clamp(88px, 20vw, 118px); left: 1%; bottom: 5%; }
+      .hb-logo-card { right: 1%; top: 50%; padding: 10px 14px; }
+      .hb-logo-card img { width: clamp(108px, 24vw, 140px); }
+    }
+
+    /* ============================================================
+       PRICING
+       Motion language: executive resolve. Each card's top rule
+       draws in, the price settles from soft to sharp, the previous
+       list price is struck through in real time, and the license
+       contents tick in one by one.
+       ============================================================ */
+    .pricing-head { max-width: 760px; }
+    .pricing-grid {
+      margin-top: clamp(38px, 5vw, 56px);
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(20px, 3vw, 32px);
+    }
+    .price-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: clamp(28px, 3.4vw, 40px);
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      display: flex; flex-direction: column;
+    }
+    .price-card::before {
+      content: ""; position: absolute; top: 0; left: clamp(28px, 3.4vw, 40px); right: clamp(28px, 3.4vw, 40px);
+      height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left center;
+      transition: transform 700ms cubic-bezier(.3,.7,.2,1) 160ms;
+    }
+    .price-card.is-in::before { transform: scaleX(1); }
+    .price-card h3 { font-size: 24px; }
+    .price-kind { margin-top: 6px; color: var(--slate); font-size: 15px; }
+    .price-row { margin-top: 24px; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+    .price-now {
+      font-weight: 600;
+      font-size: clamp(40px, 4.4vw, 52px); line-height: 1;
+      transition: filter 500ms ease, opacity 500ms ease;
+    }
+    .js .price-card .price-now { filter: blur(6px); opacity: 0.25; }
+    .price-card.is-in .price-now { filter: blur(0); opacity: 1; transition-delay: 240ms; }
+    .price-was {
+      position: relative; color: var(--slate-soft);
+      font-size: 20px; font-weight: 500;
+    }
+    .price-was::after {
+      content: ""; position: absolute; left: -3%; right: 103%; top: 54%;
+      height: 2px; background: var(--coral); transform: none;
+      transition: right 480ms cubic-bezier(.4,.6,.2,1) 620ms;
+    }
+    .price-card.is-in .price-was::after { right: -3%; }
+    .price-per { color: var(--slate); font-size: 15px; }
+    .price-was[hidden], .price-was-note[hidden] { display: none; }
+    .price-was-note { margin-top: 8px; font-size: 12.5px; color: var(--slate-soft); }
+    .price-includes { list-style: none; margin: 26px 0 0; padding: 22px 0 0; border-top: 1px solid var(--line); display: grid; gap: 13px; }
+    .price-includes li { display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; color: var(--ink); }
+    .js .price-includes li { opacity: 0; transform: translateY(8px); transition: opacity 420ms ease, transform 420ms ease; }
+    .price-card.is-in .price-includes li { opacity: 1; transform: none; }
+    .price-card.is-in .price-includes li:nth-child(1) { transition-delay: 340ms; }
+    .price-card.is-in .price-includes li:nth-child(2) { transition-delay: 410ms; }
+    .price-card.is-in .price-includes li:nth-child(3) { transition-delay: 480ms; }
+    .price-card.is-in .price-includes li:nth-child(4) { transition-delay: 550ms; }
+    .price-card.is-in .price-includes li:nth-child(5) { transition-delay: 620ms; }
+    .tick { flex: none; margin-top: 3px; }
+    .tick path {
+      stroke: var(--gold-deep); stroke-width: 2.2; fill: none;
+      stroke-linecap: round; stroke-linejoin: round;
+      stroke-dasharray: 20; stroke-dashoffset: 20;
+      transition: stroke-dashoffset 460ms ease 520ms;
+    }
+    .price-card.is-in .tick path { stroke-dashoffset: 0; }
+    .price-cta { margin-top: 28px; }
+    .price-cta .btn { width: 100%; justify-content: center; }
+    .pricing-note {
+      margin-top: 30px; max-width: 74ch;
+      font-size: 14px; color: var(--slate); line-height: 1.65;
+    }
+    @media (max-width: 800px) { .pricing-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       ROI  (a sponsorship ends when the event does)
+       Motion language: analytical fill. Two year strips light up,
+       one for three days and one for the full year, while the
+       per-day figure counts to its value. Nothing lifts, nothing
+       tilts. The data does the talking.
+       ============================================================ */
+    .roi-grid {
+      display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: clamp(36px, 5vw, 72px); align-items: center;
+    }
+    .roi-perday { margin-top: 22px; font-size: 17px; color: var(--ink); max-width: 52ch; }
+    .roi-perday strong { color: var(--gold-deep); font-weight: 700; }
+    .roi-soft { margin-top: 16px; font-size: 15px; color: var(--slate); max-width: 52ch; }
+    .year-strips { display: grid; gap: 26px; }
+    .year-strip {
+      background: var(--white); border: 1px solid var(--line);
+      border-radius: var(--radius-md); padding: 20px 22px;
+      box-shadow: var(--shadow-sm);
+    }
+    .year-strip header { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 14px; }
+    .year-strip h3 { font-size: 16.5px; font-weight: 600; }
+    .year-strip .lit-count { font-size: 13px; color: var(--slate); font-variant-numeric: tabular-nums; }
+    .pip-grid { display: flex; flex-wrap: wrap; gap: 3px; }
+    .pip {
+      width: 8px; height: 8px; border-radius: 2px;
+      background: rgba(26, 31, 37, 0.08);
+      transition: background 240ms ease, box-shadow 240ms ease;
+    }
+    .pip.lit { background: var(--gold); box-shadow: 0 0 0 1px rgba(175, 134, 58, 0.25) inset; }
+    .year-caption { margin-top: 12px; font-size: 12.5px; color: var(--slate-soft); }
+    @media (max-width: 880px) { .roi-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       REFERRAL  (every referral checks you out)
+       Motion language: the search moment. A query types itself,
+       a bio card rises, and the licensed mark settles in beside
+       the name. It plays once and goes still.
+       ============================================================ */
+    .ref-grid {
+      display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: clamp(36px, 5vw, 72px); align-items: center;
+    }
+    .search-scene { display: grid; gap: 16px; }
+    .search-bar {
+      display: flex; align-items: center; gap: 12px;
+      background: var(--white); border: 1px solid var(--line-strong);
+      border-radius: 999px; padding: 14px 20px;
+      box-shadow: var(--shadow-sm);
+      font-size: 16px; color: var(--ink);
+    }
+    .search-bar svg { flex: none; }
+    .search-q { min-height: 1.4em; }
+    .caret {
+      display: inline-block; width: 1px; height: 1.05em; margin-left: 1px;
+      background: var(--charcoal); vertical-align: -0.18em;
+      animation: caret-blink 1s steps(1) infinite;
+    }
+    @keyframes caret-blink { 50% { opacity: 0; } }
+    .search-scene.done .caret { display: none; }
+    .bio-card {
+      background: var(--white); border: 1px solid var(--line);
+      border-radius: var(--radius-md); padding: 22px 24px;
+      box-shadow: var(--shadow-md);
+      display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: start;
+    }
+    .js .bio-card { opacity: 0; transform: translateY(20px); transition: opacity 560ms ease, transform 560ms cubic-bezier(.22,.7,.24,1); }
+    .search-scene.result .bio-card { opacity: 1; transform: none; }
+    .bio-avatar {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--charcoal); color: var(--gold);
+      display: grid; place-items: center;
+      font-weight: 600; font-size: 19px;
+    }
+    .bio-name { font-weight: 600; font-size: 20px; }
+    .bio-meta { margin-top: 3px; font-size: 14px; color: var(--slate); }
+    .bio-mark { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+    .bio-mark img { width: min(240px, 78%); }
+    .js .bio-mark { opacity: 0; transition: opacity 620ms ease 260ms; }
+    .search-scene.verified .bio-mark { opacity: 1; }
+    .bio-underline {
+      margin-top: 10px; height: 2px; width: 120px; background: var(--gold);
+      transform: scaleX(0); transform-origin: left center;
+      transition: transform 520ms cubic-bezier(.3,.7,.2,1) 420ms;
+    }
+    .search-scene.verified .bio-underline { transform: scaleX(1); }
+    @media (max-width: 880px) { .ref-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       BADGE WHEEL  (charcoal showcase, the signature element)
+       Motion language: the orbit. The badge family rotates slowly
+       through center focus. Advance is measured, hover pauses it,
+       drag and arrows steer it, and reduced motion stills it.
+       ============================================================ */
+    .wheel-section { overflow: clip; }
+    .wheel-head { max-width: 700px; }
+    .wheel {
+      margin-top: clamp(36px, 5vw, 54px);
+      position: relative;
+      height: clamp(300px, 38vw, 420px);
+    }
+    .wheel-track { position: absolute; inset: 0; }
+    .wheel-item {
+      position: absolute; top: 50%; left: 50%;
+      width: clamp(190px, 24vw, 280px);
+      margin: 0;
+      transform: translate(-50%, -50%);
+      transition: transform 760ms cubic-bezier(.24,.7,.22,1), opacity 620ms ease;
+      cursor: pointer;
+      display: grid; place-items: center;
+    }
+    .wheel-item img { max-height: clamp(210px, 30vw, 320px); width: auto; filter: drop-shadow(0 26px 44px rgba(0, 0, 0, 0.45)); }
+    .wheel-item .badge-plate {
+      background: var(--white); border-radius: var(--radius-md);
+      padding: 22px 20px; width: 100%;
+      box-shadow: 0 26px 44px rgba(0, 0, 0, 0.45);
+    }
+    .wheel-item[aria-hidden="true"] { pointer-events: none; }
+    .js .wheel-item { opacity: 0; }
+    html:not(.js) .wheel { height: auto; }
+    html:not(.js) .wheel-track { position: static; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 28px; padding: 0; list-style: none; }
+    html:not(.js) .wheel-item { position: static; transform: none; width: auto; }
+    html:not(.js) .wheel-nav, html:not(.js) .wheel-progress, html:not(.js) .wheel-caption { display: none; }
+    .wheel-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      z-index: 20;
+      width: 46px; height: 46px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid var(--line-dark);
+      color: var(--white);
+      transition: background 200ms ease, border-color 200ms ease;
+    }
+    .wheel-nav:hover { background: rgba(255, 255, 255, 0.14); border-color: rgba(255, 255, 255, 0.3); }
+    .wheel-nav.prev { left: 0; }
+    .wheel-nav.next { right: 0; }
+    .wheel-caption { margin-top: 26px; text-align: center; min-height: 78px; }
+    .wheel-caption h3 { font-size: 22px; transition: opacity 300ms ease; }
+    .wheel-caption p { margin-top: 6px; color: rgba(255, 255, 255, 0.66); font-size: 15px; transition: opacity 300ms ease; }
+    .wheel-caption.fading h3, .wheel-caption.fading p { opacity: 0; }
+    .wheel-progress { margin-top: 22px; display: flex; justify-content: center; gap: 8px; }
+    .wheel-progress button {
+      width: 22px; height: 3px; border-radius: 2px;
+      background: rgba(255, 255, 255, 0.2);
+      transition: background 240ms ease;
+    }
+    .wheel-progress button[aria-current="true"] { background: var(--gold); }
+    .wheel-note {
+      margin-top: 34px; text-align: center;
+      font-size: 14px; color: rgba(255, 255, 255, 0.6);
+      max-width: 62ch; margin-inline: auto;
+    }
+
+    /* ============================================================
+       INTEGRITY  (selectivity, earned vs licensed, brand harmony)
+       Motion language: calm authority. Numbers count with
+       precision, a single divider draws, and the two-part
+       statement reveals by meaning. No hover effects at all.
+       ============================================================ */
+    .stats-row {
+      margin-top: clamp(34px, 4vw, 48px);
+      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: clamp(18px, 3vw, 40px);
+    }
+    .stat b {
+      display: block; font-weight: 600;
+      font-size: clamp(30px, 3.4vw, 42px); line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+    .stat span { display: block; margin-top: 10px; font-size: 14px; color: var(--slate); max-width: 24ch; }
+    .earned-license {
+      margin-top: clamp(52px, 6vw, 76px);
+      padding-top: clamp(38px, 4vw, 54px);
+      position: relative;
+      text-align: center;
+    }
+    .earned-license::before {
+      content: ""; position: absolute; top: 0; left: 50%;
+      width: 210px; height: 1px; background: var(--line-strong);
+      transform: translateX(-50%) scaleX(0);
+      transition: transform 800ms cubic-bezier(.3,.7,.2,1);
+    }
+    .earned-license.is-in::before { transform: translateX(-50%) scaleX(1); }
+    .earned-license .l1, .earned-license .l2 {
+      display: block; font-weight: 600;
+      font-size: clamp(26px, 3.6vw, 40px); line-height: 1.2;
+    }
+    .earned-license .l2 { color: var(--gold-deep); }
+    .js .earned-license .l1 { opacity: 0; transform: translateY(14px); transition: opacity 620ms ease 160ms, transform 620ms ease 160ms; }
+    .js .earned-license .l2 { opacity: 0; transform: translateY(14px); transition: opacity 620ms ease 560ms, transform 620ms ease 560ms; }
+    .earned-license.is-in .l1, .earned-license.is-in .l2 { opacity: 1; transform: none; }
+    .earned-license p { margin: 22px auto 0; max-width: 66ch; color: var(--slate); font-size: 16px; }
+    .brand-harmony {
+      margin-top: clamp(52px, 6vw, 72px);
+      display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: clamp(30px, 4vw, 64px); align-items: center;
+    }
+    .brand-harmony h3 { font-size: clamp(22px, 2.4vw, 28px); }
+    .brand-harmony .copy p { margin-top: 14px; color: var(--slate); font-size: 16px; max-width: 52ch; }
+    .lockup-demo {
+      background: var(--off); border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: clamp(26px, 3vw, 40px);
+      display: grid; gap: 20px; justify-items: center; text-align: center;
+    }
+    .firm-wordmark {
+      font-weight: 600;
+      font-size: clamp(19px, 2vw, 24px); letter-spacing: 0.14em;
+      color: var(--charcoal);
+    }
+    .lockup-plus { width: 34px; height: 1px; background: var(--line-strong); }
+    .lockup-demo img { width: min(280px, 86%); }
+    .lockup-cap { font-size: 12.5px; color: var(--slate-soft); }
+    @media (max-width: 880px) {
+      .stats-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .brand-harmony { grid-template-columns: 1fr; }
+    }
+
+    /* ============================================================
+       WHERE IT WORKS  (channel previews)
+       Motion language: changing rooms. The active pane slides in,
+       its mock assembles in micro sequence with the badge landing
+       last, and the tab underline glides between stops.
+       ============================================================ */
+    .tabs { margin-top: clamp(34px, 4vw, 48px); }
+    .tab-list {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      border-bottom: 1px solid var(--line);
+    }
+    .tab-btn {
+      padding: 12px 18px 14px; font-size: 15px; font-weight: 600;
+      color: var(--slate); position: relative;
+      transition: color 200ms ease;
+    }
+    .tab-btn::after {
+      content: ""; position: absolute; left: 14px; right: 14px; bottom: -1px;
+      height: 2px; background: var(--gold-deep);
+      transform: scaleX(0); transition: transform 260ms cubic-bezier(.3,.7,.2,1);
+    }
+    .tab-btn[aria-selected="true"] { color: var(--charcoal); }
+    .tab-btn[aria-selected="true"]::after { transform: scaleX(1); }
+    .tab-panes { margin-top: clamp(28px, 3.4vw, 40px); position: relative; }
+    .pane { display: none; }
+    .pane.active { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(28px, 4vw, 60px); align-items: center; }
+    .js .pane.active { animation: pane-in 460ms cubic-bezier(.22,.7,.24,1); }
+    @keyframes pane-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .pane .mock { order: 0; }
+    .pane .pane-copy { order: 1; }
+    .pane-copy h3 { font-size: 22px; }
+    .pane-copy p { margin-top: 12px; color: var(--slate); font-size: 16px; max-width: 46ch; }
+    .rule-chip {
+      margin-top: 20px; display: inline-flex; align-items: flex-start; gap: 10px;
+      background: var(--white); border: 1px solid var(--line);
+      border-left: 3px solid var(--gold-deep);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px; font-size: 13.5px; color: var(--ink); max-width: 46ch;
+    }
+    .mock {
+      background: var(--white); border: 1px solid var(--line);
+      border-radius: var(--radius-md); box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .js .pane.active .mock > * { opacity: 0; transform: translateY(8px); animation: mock-el 420ms ease forwards; }
+    .js .pane.active .mock > *:nth-child(1) { animation-delay: 90ms; }
+    .js .pane.active .mock > *:nth-child(2) { animation-delay: 180ms; }
+    .js .pane.active .mock > *:nth-child(3) { animation-delay: 270ms; }
+    .js .pane.active .mock > *:nth-child(4) { animation-delay: 380ms; }
+    @keyframes mock-el { to { opacity: 1; transform: none; } }
+    .mock-chrome {
+      display: flex; align-items: center; gap: 6px;
+      padding: 12px 16px; border-bottom: 1px solid var(--line);
+      background: var(--off);
+    }
+    .mock-chrome i { width: 9px; height: 9px; border-radius: 50%; background: rgba(26,31,37,0.16); font-style: normal; }
+    .mock-body { padding: 22px 24px; }
+    .mock-line { height: 9px; border-radius: 5px; background: rgba(26,31,37,0.09); margin-top: 10px; }
+    .mock-line.w60 { width: 60%; } .mock-line.w80 { width: 80%; } .mock-line.w40 { width: 40%; }
+    .mock-title { font-weight: 600; font-size: 19px; }
+    .mock-sub { font-size: 13px; color: var(--slate); margin-top: 3px; }
+    .mock-badge-sm img { width: min(220px, 70%); margin-top: 16px; }
+    .mock-shield { display: flex; gap: 18px; align-items: center; }
+    .mock-shield img { width: 96px; flex: none; }
+    .sig-block { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 14px; font-size: 13.5px; color: var(--slate); }
+    .li-head { display: flex; gap: 12px; align-items: center; }
+    .li-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--charcoal); color: var(--gold); display: grid; place-items: center; font-weight: 600; }
+    .li-name { font-weight: 700; font-size: 15px; }
+    .li-meta { font-size: 12.5px; color: var(--slate-soft); }
+    .li-text { margin-top: 14px; font-size: 14.5px; line-height: 1.55; }
+    .li-text em { font-style: italic; }
+    .li-img { margin-top: 14px; background: var(--off); border-radius: var(--radius-sm); padding: 22px; display: grid; place-items: center; }
+    .li-img img { width: min(260px, 80%); }
+    .proposal-cover { padding: clamp(26px, 3vw, 40px); background: linear-gradient(165deg, var(--charcoal) 0%, var(--charcoal-3) 100%); color: var(--white); }
+    .proposal-cover .mock-kind { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .proposal-cover h4 { font-family: var(--font-display); font-weight: 600; font-size: 24px; margin: 12px 0 4px; }
+    .proposal-cover .mock-sub { color: rgba(255, 255, 255, 0.6); }
+    .proposal-cover img { width: 120px; margin-top: 22px; }
+    .print-ad { padding: clamp(26px, 3vw, 40px); }
+    .print-ad h4 { font-family: var(--font-display); font-weight: 600; font-size: 22px; margin: 0 0 6px; }
+    .print-ad .ad-firm { font-size: 12.5px; letter-spacing: 0.14em; color: var(--slate); text-transform: uppercase; }
+    .print-ad img { width: 150px; margin-top: 18px; }
+    .print-ad .ad-foot { margin-top: 16px; font-size: 11.5px; color: var(--slate-soft); }
+    @media (max-width: 880px) {
+      .pane.active { grid-template-columns: 1fr; }
+      .pane .mock { order: 1; } .pane .pane-copy { order: 0; }
+    }
+
+    /* ============================================================
+       WHAT YOU RECEIVE  (asset clarity)
+       Motion language: editorial stagger. Cards arrive with a
+       soft spring and settle level. Hover lifts them a touch,
+       nothing more.
+       ============================================================ */
+    .receive-grid {
+      margin-top: clamp(34px, 4vw, 48px);
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(18px, 2.4vw, 28px);
+    }
+    .asset-card {
+      background: var(--white); border: 1px solid var(--line);
+      border-radius: var(--radius-md); padding: 26px 26px 28px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 260ms ease, box-shadow 260ms ease, opacity 560ms ease;
+    }
+    .asset-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .js .asset-card { opacity: 0; transform: translateY(22px) rotate(var(--tilt, 0.4deg)); }
+    .asset-card.is-in { opacity: 1; transform: none; transition: transform 640ms cubic-bezier(.2,.75,.3,1.04) var(--d, 0ms), opacity 560ms ease var(--d, 0ms), box-shadow 260ms ease; }
+    .asset-card:nth-child(even) { --tilt: -0.4deg; }
+    .asset-media {
+      height: 118px; display: grid; place-items: center;
+      background: var(--off); border-radius: var(--radius-sm);
+      margin-bottom: 18px; overflow: hidden;
+    }
+    .asset-media img { max-height: 92px; width: auto; max-width: 86%; }
+    .asset-media svg { width: 46px; height: 46px; }
+    .asset-card h3 { font-size: 18.5px; }
+    .asset-card p { margin-top: 8px; font-size: 14.5px; color: var(--slate); }
+    @media (max-width: 960px) { .receive-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 620px) { .receive-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       COMPLIANCE  (say it right)
+       Motion language: the proof sheet. Lines reveal from the top
+       down like a page coming off the press. Checks draw in gold,
+       the wrong lines are marked in coral.
+       ============================================================ */
+    .lang-grid {
+      margin-top: clamp(34px, 4vw, 48px);
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(20px, 3vw, 32px);
+    }
+    .lang-col {
+      background: var(--white); border: 1px solid var(--line);
+      border-radius: var(--radius-md); padding: clamp(24px, 3vw, 34px);
+      box-shadow: var(--shadow-sm);
+    }
+    .lang-col h3 { font-size: 17px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .lang-col ul { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 16px; }
+    .lang-col li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.55; }
+    .lang-col li em { font-style: italic; }
+    .js .lang-col li { opacity: 0; transform: translateY(10px); transition: opacity 460ms ease, transform 460ms ease; }
+    .lang-col.is-in li { opacity: 1; transform: none; }
+    .lang-col.is-in li:nth-child(1) { transition-delay: 140ms; }
+    .lang-col.is-in li:nth-child(2) { transition-delay: 280ms; }
+    .lang-col.is-in li:nth-child(3) { transition-delay: 420ms; }
+    .mark-ok, .mark-no { flex: none; margin-top: 2px; }
+    .mark-ok path { stroke: var(--gold-deep); stroke-width: 2.4; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 22; stroke-dashoffset: 22; transition: stroke-dashoffset 480ms ease 260ms; }
+    .lang-col.is-in .mark-ok path { stroke-dashoffset: 0; }
+    .mark-no path { stroke: var(--coral); stroke-width: 2.4; fill: none; stroke-linecap: round; stroke-dasharray: 18; stroke-dashoffset: 18; transition: stroke-dashoffset 480ms ease 260ms; }
+    .lang-col.is-in .mark-no path { stroke-dashoffset: 0; }
+    .terms-strip {
+      margin-top: clamp(28px, 3.4vw, 40px);
+      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px; background: var(--line);
+      border: 1px solid var(--line); border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .term { background: var(--white); padding: 22px 22px 24px; }
+    .js .term { opacity: 0; transform: translateY(10px); transition: opacity 480ms ease var(--d, 0ms), transform 480ms ease var(--d, 0ms); }
+    .term.is-in { opacity: 1; transform: none; }
+    .term b { display: block; font-size: 14px; margin-bottom: 8px; color: var(--gold-deep); letter-spacing: 0.02em; }
+    .term p { font-size: 14px; color: var(--slate); line-height: 1.55; }
+    .terms-foot { margin-top: 20px; font-size: 12.5px; color: var(--slate-soft); max-width: 80ch; }
+    @media (max-width: 880px) {
+      .lang-grid { grid-template-columns: 1fr; }
+      .terms-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px) { .terms-strip { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       FAQ
+       Motion language: a document unfolding. One item open at a
+       time, a smooth plus to minus, and the calmest section on
+       the page. Nothing else moves here.
+       ============================================================ */
+    .faq-grid {
+      margin-top: clamp(30px, 4vw, 44px);
+      display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(28px, 4vw, 64px);
+    }
+    .faq-list { border-top: 1px solid var(--line); }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-q {
+      width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px;
+      padding: 20px 2px; text-align: left;
+      font-size: 16.5px; font-weight: 600; color: var(--charcoal);
+      transition: color 200ms ease;
+    }
+    .faq-q:hover { color: var(--gold-deep); }
+    .faq-icon { flex: none; position: relative; width: 16px; height: 16px; }
+    .faq-icon::before, .faq-icon::after {
+      content: ""; position: absolute; background: var(--gold-deep); border-radius: 1px;
+      transition: transform 300ms cubic-bezier(.3,.7,.2,1);
+    }
+    .faq-icon::before { left: 0; right: 0; top: 7px; height: 2px; }
+    .faq-icon::after { top: 0; bottom: 0; left: 7px; width: 2px; }
+    .faq-item.open .faq-icon::after { transform: scaleY(0); }
+    .faq-a { overflow: hidden; height: 0; transition: height 360ms cubic-bezier(.3,.7,.2,1); }
+    .faq-a-inner { padding: 0 2px 22px; font-size: 15.5px; color: var(--slate); max-width: 62ch; }
+    @media (max-width: 880px) { .faq-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       FINAL CTA
+       Motion language: stillness. One slow rise, one settled
+       button, then nothing at all.
+       ============================================================ */
+    .final { text-align: center; padding-block: clamp(96px, 12vw, 168px); }
+    .final h2 { font-size: clamp(32px, 4.6vw, 52px); max-width: 18ch; margin-inline: auto; text-wrap: balance; }
+    .final p { margin: 20px auto 0; max-width: 44ch; color: rgba(255, 255, 255, 0.7); font-size: 17px; }
+    .final .btn { margin-top: 38px; }
+    .js .final-inner { opacity: 0; transform: translateY(22px); transition: opacity 900ms ease, transform 900ms cubic-bezier(.2,.66,.22,1); }
+    .final-inner.is-in { opacity: 1; transform: none; }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .site-footer { background: var(--charcoal); color: rgba(255, 255, 255, 0.66); border-top: 1px solid var(--line-dark); }
+    .footer-main {
+      display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr);
+      gap: clamp(28px, 4vw, 64px);
+      padding-block: clamp(48px, 6vw, 72px) clamp(30px, 4vw, 44px);
+    }
+    .footer-brand img { height: 22px; width: auto; }
+    .footer-brand p { margin-top: 18px; font-size: 13.5px; line-height: 1.65; max-width: 44ch; }
+    .footer-col strong { display: block; color: var(--white); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px; }
+    .footer-col a { display: block; padding: 5px 0; font-size: 14px; transition: color 180ms ease; }
+    .footer-col a:hover { color: var(--gold); }
+    .footer-legal { border-top: 1px solid var(--line-dark); padding-block: 22px 30px; font-size: 12px; line-height: 1.65; color: rgba(255, 255, 255, 0.45); display: grid; gap: 12px; }
+    @media (max-width: 820px) { .footer-main { grid-template-columns: 1fr; } }
+
+    /* ============================================================
+       REVEAL UTILITIES + REDUCED MOTION
+       ============================================================ */
+    .js [data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity 640ms ease, transform 640ms cubic-bezier(.22,.7,.24,1); }
+    .js [data-reveal].is-in { opacity: 1; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .js [data-reveal], .js .hero .line, .js .hero .lede, .js .hero-ctas, .js .hero-proof,
+      .js .hb-gold, .js .hb-silver, .js .hb-blue, .js .hb-loty, .js .hb-logo-card,
+      .js .price-includes li, .js .price-card .price-now,
+      .js .asset-card, .js .lang-col li, .js .term, .js .bio-card, .js .bio-mark,
+      .js .final-inner, .js .earned-license .l1, .js .earned-license .l2 {
+        opacity: 1 !important; transform: none !important; filter: none !important;
+      }
+      .hb-silver { transform: rotate(7deg) !important; }
+      .hb-blue   { transform: rotate(-5deg) !important; }
+      .hb-loty   { transform: rotate(-8deg) !important; }
+      .price-card::before, .earned-license::before { transform: scaleX(1) !important; }
+      .earned-license::before { transform: translateX(-50%) scaleX(1) !important; }
+      .price-was::after { right: -3% !important; }
+      .tick path, .mark-ok path, .mark-no path { stroke-dashoffset: 0 !important; }
+      .bio-underline { transform: scaleX(1) !important; }
+      .js .pane.active .mock > * { opacity: 1 !important; transform: none !important; }
+      .caret { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="https://www.bestlawyers.com" target="_blank" rel="noopener noreferrer" aria-label="Best Lawyers home">
+        <img src="assets/brand/best-lawyers-white.png" alt="Best Lawyers" width="160" height="43" />
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#pricing">Pricing</a>
+        <a href="#badges">The Badges</a>
+        <a href="#usage">Where It Works</a>
+        <a href="#licensing">Licensing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-gold" href="#pricing">Buy Your Badge</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top" data-io>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>
+            <span class="line">Put your recognition</span>
+            <span class="line">where clients can see it.</span>
+          </h1>
+          <p class="lede">License official Best Lawyers&reg; badges and logos for your website, email signature, social media, marketing materials, and approved advertising.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-gold" href="#pricing">
+              Buy Your Badge
+              <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn-ghost" href="#badges">See the full badge family</a>
+          </div>
+          <div class="hero-proof">
+            <span><i></i>Peer-reviewed recognition</span>
+            <span><i></i>About 5% of U.S. lawyers</span>
+            <span><i></i>Official licensed artwork</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="false">
+          <div class="hero-halo"></div>
+          <!-- Law Firm of the Year gold shield: centrepiece -->
+          <img class="hb-gold" data-parallax="0.04"
+               src="assets/badges/blf-lfoty-gold.png"
+               alt="Best Law Firms Law Firm of the Year badge"
+               width="625" height="735" loading="eager" fetchpriority="high" />
+          <!-- National silver shield: secondary -->
+          <img class="hb-silver" data-parallax="0.07"
+               src="assets/badges/blf-national-silver.png"
+               alt="Best Law Firms National Rankings badge"
+               width="625" height="735" loading="eager" />
+          <!-- Regional blue shield: tertiary depth -->
+          <img class="hb-blue" data-parallax="0.05"
+               src="assets/badges/blf-regional-blue.png"
+               alt="Best Law Firms Regional Rankings badge"
+               width="625" height="735" loading="lazy" />
+          <!-- LOTY 2026 circular: accent, lower-left -->
+          <img class="hb-loty" data-parallax="0.11"
+               src="assets/badges/loty-2026.png"
+               alt="Best Lawyers Lawyer of the Year 2026 badge"
+               width="900" height="854" loading="eager" />
+          <!-- BL Lawyer Logo: floating card, mid-right -->
+          <div class="hb-logo-card" data-parallax="0.06">
+            <img src="assets/badges/bl-lawyer-logo.png"
+                 alt="Best Lawyers recognized lawyer logo"
+                 width="468" height="174" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="wrap">
+        <div class="pricing-head">
+          <h2 class="h-display" data-reveal>One badge. One flat license. No bundle required.</h2>
+          <p class="lede" data-reveal>The question firms ask most: can we just buy the badge? Yes. Right here. Pick your license and the official artwork is prepared for your recognition, your name, and the edition year.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card" data-io>
+            <h3>For Lawyers</h3>
+            <p class="price-kind">Individual badge license</p>
+            <div class="price-row">
+              <span class="price-now" data-price="lawyer">$795</span>
+              <span class="price-was" data-compare="lawyer" hidden>$0</span>
+              <span class="price-per">per year</span>
+            </div>
+            <p class="price-was-note" data-compare-note="lawyer" hidden>Previous list price shown struck through.</p>
+            <ul class="price-includes">
+              <li><svg class="tick" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Personalized artwork with your name and edition year</li>
+              <li><svg class="tick" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Formats for your website, email signature, and social media</li>
+              <li><svg class="tick" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Print-ready files for approved materials</li>
+              <li><svg class="tick" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>The approved wording for every announcement</li>
+              <li><svg class="tick" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>License valid 12 months or until the next edition in your country</li>
+            </ul>
+            <div class="price-cta">
+              <a class="btn btn-gold" href="#" data-purchase="lawyer">
+                Buy the Lawyer Badge
+                <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="price-card" data-io>
+            <h3>For Firms</h3>
+            <p class="price-kind">Firm badge license</p>
+            <div class="price-row">
+              <span class="price-now" data-price="firm">$1,800</span>
+              <span class="price-was" data-compare="firm" hidden>$0</span>
+              <span class="price-per">per year</span>
+            </div>
+            <p class="price-was-note" data-compare-note="firm" hidden>Previous list price shown struck through.</p>
+            <ul class="price-includes">
+              <li><svg class="tick" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Firm artwork with your firm's name and edition year</li>
+              <li><svg class="tick" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Formats for your website, email, social media, and proposals</li>
+              <li><svg class="tick" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Print-ready files for approved materials</li>
+              <li><svg class="tick" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>Publicizing guidance for firm-wide announcements</li>
+              <li><svg class="tick" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8.5 6 12l7.5-8"/></svg>License valid 12 months or until the next edition in your country</li>
+            </ul>
+            <div class="price-cta">
+              <a class="btn btn-gold" href="#" data-purchase="firm">
+                Buy the Firm Badge
+                <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+        <p class="pricing-note" data-reveal>Licensing is available to lawyers and firms that appear in the current Best Lawyers rankings. Recognition itself is never for sale, and buying a license never changes a ranking. Prices shown in USD.</p>
+      </div>
+    </section>
+
+    <!-- ROI -->
+    <section class="section section-off" id="roi">
+      <div class="wrap roi-grid">
+        <div>
+          <h2 class="h-display" data-reveal>A sponsorship ends when the event does.</h2>
+          <p class="lede" data-reveal>Conferences are good marketing. They are also three days long. The badge you license today is still working in March, in July, in December. It sits on your site, your bio, your signature, and every proposal you send.</p>
+          <p class="roi-perday" data-reveal>At <strong data-price-inline="lawyer">$795</strong> a year, the badge costs about <strong data-perday>$2.18</strong> a day across every channel you own.</p>
+          <p class="roi-soft" data-reveal>Keep going to the events. Let the badge cover the other 362 days.</p>
+        </div>
+        <div class="year-strips" data-io>
+          <div class="year-strip">
+            <header>
+              <h3>A three-day conference</h3>
+              <span class="lit-count"><span data-litcount="conf">0</span> of 365 days visible</span>
+            </header>
+            <div class="pip-grid" data-pips="conf" aria-hidden="true"></div>
+            <p class="year-caption">Days your presence is in front of the market over one year.</p>
+          </div>
+          <div class="year-strip">
+            <header>
+              <h3>Your badge license</h3>
+              <span class="lit-count"><span data-litcount="badge">0</span> of 365 days visible</span>
+            </header>
+            <div class="pip-grid" data-pips="badge" aria-hidden="true"></div>
+            <p class="year-caption">The same year with licensed artwork on your owned channels.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERRAL -->
+    <section class="section" id="referral">
+      <div class="wrap ref-grid">
+        <div>
+          <h2 class="h-display" data-reveal>Every referral checks you out before they call.</h2>
+          <p class="lede" data-reveal>Word of mouth is powerful. It is also only the first step. The next thing a referred client does is search your name. What they find either confirms the recommendation or quietly plants doubt.</p>
+          <p class="lede" data-reveal>An official badge on your site and profiles settles it in seconds. Other lawyers reviewed this person. This person stood out.</p>
+        </div>
+        <div class="search-scene" data-io>
+          <div class="search-bar">
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="#545C66" stroke-width="1.6"/><path d="m12.5 12.5 3 3" stroke="#545C66" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span class="search-q"><span data-type="margaret cole attorney"></span><span class="caret" aria-hidden="true"></span></span>
+          </div>
+          <div class="bio-card">
+            <div class="bio-avatar" aria-hidden="true">MC</div>
+            <div>
+              <div class="bio-name">Margaret Cole</div>
+              <div class="bio-meta">Caldwell &amp; Pierce LLP &middot; Family Law &middot; Atlanta, GA</div>
+              <div class="bio-mark">
+                <img src="assets/badges/bl-lawyer-logo.png" alt="Best Lawyers recognition logo with lawyer name and year fields" width="468" height="174" />
+                <div class="bio-underline" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BADGE WHEEL -->
+    <section class="section section-dark wheel-section" id="badges">
+      <div class="wrap">
+        <div class="wheel-head">
+          <h2 class="h-display" data-reveal>Every mark in the family. One place to license them.</h2>
+          <p class="lede" data-reveal>Turn through the badges and logos available to recognized lawyers and firms. Personalized versions carry your name and the edition year.</p>
+        </div>
+        <div class="wheel" data-io aria-roledescription="carousel" aria-label="Best Lawyers badge and logo family">
+          <button class="wheel-nav prev" type="button" aria-label="Previous badge">
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M11 3.5 5.5 9l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="wheel-track" role="list">
+            <li class="wheel-item" data-name="Lawyer of the Year" data-desc="One lawyer per practice area and metro area in each edition. The rarest individual honor.">
+              <img src="assets/badges/loty-2026.png" alt="Best Lawyers Lawyer of the Year 2026 badge" width="900" height="854" loading="lazy" />
+            </li>
+            <li class="wheel-item" data-name="Best Lawyers Lawyer Logo" data-desc="Your name and edition year set with the mark clients recognize.">
+              <div class="badge-plate"><img src="assets/badges/bl-lawyer-logo.png" alt="Best Lawyers lawyer logo with name and year fields" width="468" height="174" loading="lazy" /></div>
+            </li>
+            <li class="wheel-item" data-name="Ones to Watch" data-desc="Peer recognition for lawyers earlier in their careers.">
+              <div class="badge-plate"><img src="assets/badges/otw-badge.jpg" alt="Best Lawyers Ones to Watch badge with name and year fields" width="499" height="168" loading="lazy" /></div>
+            </li>
+            <li class="wheel-item" data-name="Best Law Firms National" data-desc="National ranking recognition for firms, ranked by Best Lawyers.">
+              <img src="assets/badges/blf-national-silver.png" alt="Best Law Firms National Rankings badge" width="625" height="735" loading="lazy" />
+            </li>
+            <li class="wheel-item" data-name="Best Law Firms Regional" data-desc="Metro and regional ranking recognition for firms.">
+              <img src="assets/badges/blf-regional-blue.png" alt="Best Law Firms Regional Rankings badge" width="625" height="735" loading="lazy" />
+            </li>
+            <li class="wheel-item" data-name="Law Firm of the Year" data-desc="One firm per practice area nationally in each edition.">
+              <img src="assets/badges/blf-lfoty-gold.png" alt="Best Law Firms Law Firm of the Year Rankings badge" width="625" height="735" loading="lazy" />
+            </li>
+            <li class="wheel-item" data-name="Best Lawyers Firm Logo" data-desc="Your firm's name carried by the Best Lawyers mark.">
+              <div class="badge-plate"><img src="assets/badges/bl-firm-logo.png" alt="Best Lawyers firm logo with firm name and year fields" width="469" height="174" loading="lazy" /></div>
+            </li>
+          </ul>
+          <button class="wheel-nav next" type="button" aria-label="Next badge">
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="m7 3.5 5.5 5.5L7 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="wheel-caption" aria-live="polite">
+          <h3 data-wheel-name>Lawyer of the Year</h3>
+          <p data-wheel-desc>One lawyer per practice area and metro area in each edition. The rarest individual honor.</p>
+        </div>
+        <div class="wheel-progress" data-wheel-progress role="tablist" aria-label="Badge selector"></div>
+        <p class="wheel-note" data-reveal>Licensed artwork ships in the approved form and colors. No edits, no exceptions. That discipline is part of what keeps the mark worth displaying.</p>
+      </div>
+    </section>
+
+    <!-- INTEGRITY -->
+    <section class="section" id="integrity">
+      <div class="wrap">
+        <h2 class="h-display" data-reveal>The badge says it so you never have to.</h2>
+        <p class="lede" data-reveal>Bar rules stop you from calling yourself the best. Peer review does not. Every mark on this page stands on confidential evaluations collected from working attorneys, year after year.</p>
+        <div class="stats-row" data-io>
+          <div class="stat"><b><span data-count="13" data-suffix="M+">0M+</span></b><span>Confidential peer evaluations collected each year</span></div>
+          <div class="stat"><b><span data-count="5" data-prefix="~" data-suffix="%">0%</span></b><span>Of U.S. lawyers recognized by Best Lawyers</span></div>
+          <div class="stat"><b><span data-count="3" data-suffix="%">0%</span></b><span>Of lawyers recognized globally</span></div>
+          <div class="stat"><b><span data-count="40" data-suffix="+">0+</span></b><span>Years of the Purely Peer Review&reg; methodology</span></div>
+        </div>
+        <div class="earned-license" data-io>
+          <span class="l1">Recognition is earned.</span>
+          <span class="l2">The right to display it is licensed.</span>
+          <p>No fees are accepted for consideration or inclusion. A license never buys a ranking and never moves one. It buys the legal right to show what the profession already decided.</p>
+        </div>
+        <div class="brand-harmony">
+          <div class="copy">
+            <h3 data-reveal>Your brand stays the hero.</h3>
+            <p data-reveal>A badge never replaces your firm's name. It stands next to it as independent proof. Clients already trust your brand. The mark tells them the rest of the profession does too.</p>
+          </div>
+          <div class="lockup-demo" data-reveal>
+            <span class="firm-wordmark">CALDWELL &amp; PIERCE LLP</span>
+            <span class="lockup-plus" aria-hidden="true"></span>
+            <img src="assets/badges/bl-firm-logo.png" alt="Best Lawyers firm recognition logo" width="469" height="174" loading="lazy" />
+            <span class="lockup-cap">Your identity leads. The mark verifies.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHERE IT WORKS -->
+    <section class="section section-off" id="usage">
+      <div class="wrap">
+        <h2 class="h-display" data-reveal>Licensed to live where clients look.</h2>
+        <p class="lede" data-reveal>One license covers the places a buying decision actually happens. Each channel has one simple rule, and it is printed right here.</p>
+        <div class="tabs">
+          <div class="tab-list" role="tablist" aria-label="Approved channels">
+            <button class="tab-btn" id="tab-web" role="tab" aria-selected="true" aria-controls="pane-web" data-tab="web">Website</button>
+            <button class="tab-btn" id="tab-email" role="tab" aria-selected="false" aria-controls="pane-email" data-tab="email" tabindex="-1">Email</button>
+            <button class="tab-btn" id="tab-social" role="tab" aria-selected="false" aria-controls="pane-social" data-tab="social" tabindex="-1">LinkedIn</button>
+            <button class="tab-btn" id="tab-proposal" role="tab" aria-selected="false" aria-controls="pane-proposal" data-tab="proposal" tabindex="-1">Proposals</button>
+            <button class="tab-btn" id="tab-print" role="tab" aria-selected="false" aria-controls="pane-print" data-tab="print" tabindex="-1">Print Ads</button>
+          </div>
+          <div class="tab-panes">
+            <div class="pane active" id="pane-web" role="tabpanel" aria-labelledby="tab-web" data-pane="web">
+              <div class="mock">
+                <div class="mock-chrome"><i></i><i></i><i></i></div>
+                <div class="mock-body">
+                  <div class="mock-title">Margaret Cole</div>
+                  <div class="mock-sub">Partner &middot; Family Law</div>
+                  <div class="mock-line w80"></div>
+                  <div class="mock-line w60"></div>
+                  <div class="mock-badge-sm"><img src="assets/badges/bl-lawyer-logo.png" alt="Best Lawyers logo placed on an attorney bio page" width="468" height="174" loading="lazy" /></div>
+                </div>
+              </div>
+              <div class="pane-copy">
+                <h3>On your site and bio pages</h3>
+                <p>Profile pages and about pages are where referred clients land first. The badge belongs beside your name, not buried on an awards page.</p>
+                <p class="rule-chip">Link the badge to your Best Lawyers profile or BestLawyers.com. A hyperlink is required when publicizing online.</p>
+              </div>
+            </div>
+            <div class="pane" id="pane-email" role="tabpanel" aria-labelledby="tab-email" data-pane="email" hidden>
+              <div class="mock">
+                <div class="mock-chrome"><i></i><i></i><i></i></div>
+                <div class="mock-body">
+                  <div class="mock-line w80"></div>
+                  <div class="mock-line w60"></div>
+                  <div class="mock-line w40"></div>
+                  <div class="sig-block">
+                    <strong>Margaret Cole</strong> &middot; Caldwell &amp; Pierce LLP
+                    <div class="mock-badge-sm"><img src="assets/badges/bl-lawyer-logo.png" alt="Best Lawyers logo in an email signature" width="468" height="174" loading="lazy" /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pane-copy">
+                <h3>In email signatures and templates</h3>
+                <p>Every message you send becomes a small piece of proof. Signatures and firm templates are covered by the license.</p>
+                <p class="rule-chip">Use the mark in messages that come from the recognized lawyer.</p>
+              </div>
+            </div>
+            <div class="pane" id="pane-social" role="tabpanel" aria-labelledby="tab-social" data-pane="social" hidden>
+              <div class="mock">
+                <div class="mock-body">
+                  <div class="li-head">
+                    <div class="li-avatar" aria-hidden="true">MC</div>
+                    <div>
+                      <div class="li-name">Margaret Cole</div>
+                      <div class="li-meta">Partner at Caldwell &amp; Pierce LLP</div>
+                    </div>
+                  </div>
+                  <p class="li-text">Margaret Cole was included in the 2026 edition of <em>The Best Lawyers in America</em>&reg; for Family Law.</p>
+                  <div class="li-img"><img src="assets/badges/otw-badge.jpg" alt="Best Lawyers badge shared in a social media post" width="499" height="168" loading="lazy" /></div>
+                </div>
+              </div>
+              <div class="pane-copy">
+                <h3>On LinkedIn and social</h3>
+                <p>Announcement posts reach clients, referral sources, and future hires at once. The approved wording ships with your license, ready to paste.</p>
+                <p class="rule-chip">Tagging Best Lawyers in your posts is encouraged.</p>
+              </div>
+            </div>
+            <div class="pane" id="pane-proposal" role="tabpanel" aria-labelledby="tab-proposal" data-pane="proposal" hidden>
+              <div class="mock">
+                <div class="proposal-cover">
+                  <div class="mock-kind">Engagement Proposal</div>
+                  <h4>Caldwell &amp; Pierce LLP</h4>
+                  <div class="mock-sub">Prepared for General Counsel</div>
+                  <img src="assets/badges/blf-national-silver.png" alt="Best Law Firms National badge on a proposal cover" width="625" height="735" loading="lazy" />
+                </div>
+              </div>
+              <div class="pane-copy">
+                <h3>On proposals and pitch decks</h3>
+                <p>In-house counsel compare firms side by side. Independent recognition on the cover answers a question before it gets asked.</p>
+                <p class="rule-chip">Brochures and marketing materials go to Best Lawyers for approval before production.</p>
+              </div>
+            </div>
+            <div class="pane" id="pane-print" role="tabpanel" aria-labelledby="tab-print" data-pane="print" hidden>
+              <div class="mock">
+                <div class="print-ad">
+                  <div class="ad-firm">Caldwell &amp; Pierce LLP</div>
+                  <h4>Recognized where it counts.</h4>
+                  <div class="mock-line w60"></div>
+                  <div class="mock-line w40"></div>
+                  <img src="assets/badges/blf-regional-blue.png" alt="Best Law Firms Regional badge in a print advertisement" width="625" height="735" loading="lazy" />
+                  <div class="ad-foot">Ad artwork submitted for approval prior to production.</div>
+                </div>
+              </div>
+              <div class="pane-copy">
+                <h3>In print and online advertising</h3>
+                <p>High-resolution files are prepared for print. Send the layout in, get it approved, and run it with confidence.</p>
+                <p class="rule-chip">Print and online ads are approved before production. Billboards and TV take an additional license.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU RECEIVE -->
+    <section class="section" id="receive">
+      <div class="wrap">
+        <h2 class="h-display" data-reveal>Know exactly what you are licensing.</h2>
+        <p class="lede" data-reveal>Six kinds of official artwork, each with a job. No guessing which file goes where.</p>
+        <div class="receive-grid" data-io>
+          <article class="asset-card" style="--d:0ms">
+            <div class="asset-media"><img src="assets/badges/bl-lawyer-logo.png" alt="Official Best Lawyers logo" loading="lazy" /></div>
+            <h3>Official logo</h3>
+            <p>The Best Lawyers wordmark, licensed for approved placements across your channels.</p>
+          </article>
+          <article class="asset-card" style="--d:70ms">
+            <div class="asset-media"><img src="assets/badges/blf-national-silver.png" alt="Best Law Firms recognition badge" loading="lazy" /></div>
+            <h3>Recognition badge</h3>
+            <p>The shield that shows a current ranking at a glance, in the approved form and colors.</p>
+          </article>
+          <article class="asset-card" style="--d:140ms">
+            <div class="asset-media"><img src="assets/badges/otw-badge.jpg" alt="Personalized Best Lawyers badge with name and year" loading="lazy" /></div>
+            <h3>Personalized badge</h3>
+            <p>Artwork that carries your name and the edition year, so the credit is unmistakably yours.</p>
+          </article>
+          <article class="asset-card" style="--d:210ms">
+            <div class="asset-media"><img src="assets/badges/bl-firm-logo.png" alt="Best Lawyers firm recognition mark" loading="lazy" /></div>
+            <h3>Firm recognition mark</h3>
+            <p>Your firm's name set with the Best Lawyers mark for firm-wide announcements.</p>
+          </article>
+          <article class="asset-card" style="--d:280ms">
+            <div class="asset-media">
+              <svg viewBox="0 0 46 46" aria-hidden="true"><rect x="4" y="8" width="38" height="30" rx="4" fill="none" stroke="#AF863A" stroke-width="2"/><circle cx="15" cy="19" r="4" fill="none" stroke="#AF863A" stroke-width="2"/><path d="M8 33l9-8 7 6 8-9 6 6" fill="none" stroke="#AF863A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Social graphic</h3>
+            <p>Sized and formatted for announcement posts on LinkedIn and other platforms.</p>
+          </article>
+          <article class="asset-card" style="--d:350ms">
+            <div class="asset-media">
+              <svg viewBox="0 0 46 46" aria-hidden="true"><rect x="9" y="4" width="28" height="38" rx="3" fill="none" stroke="#AF863A" stroke-width="2"/><path d="M15 13h16M15 20h16M15 27h10" stroke="#AF863A" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="32" r="5" fill="none" stroke="#AF863A" stroke-width="2"/></svg>
+            </div>
+            <h3>Print lockup</h3>
+            <p>High-resolution files prepared for print pieces and approved advertising.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLIANCE -->
+    <section class="section section-off" id="licensing">
+      <div class="wrap">
+        <h2 class="h-display" data-reveal>Say it right the first time.</h2>
+        <p class="lede" data-reveal>State bars police lawyer advertising. Best Lawyers hands you wording that already passes. Copy it, add your details, done.</p>
+        <div class="lang-grid">
+          <div class="lang-col" data-io>
+            <h3><svg class="mark-ok" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5 7 13.5 15 4.5"/></svg>Approved language</h3>
+            <ul>
+              <li><svg class="mark-ok" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5 7 13.5 15 4.5"/></svg><span>"Margaret Cole was included in the 2026 edition of <em>The Best Lawyers in America</em>&reg; for Family Law."</span></li>
+              <li><svg class="mark-ok" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5 7 13.5 15 4.5"/></svg><span>"Caldwell &amp; Pierce LLP is proud to have 14 lawyers recognized by Best Lawyers&reg; in 2026 in America."</span></li>
+              <li><svg class="mark-ok" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9.5 7 13.5 15 4.5"/></svg><span>"Robert Brown was named the Best Lawyers&reg; 2026 Family Law 'Lawyer of the Year' in Atlanta."</span></li>
+            </ul>
+          </div>
+          <div class="lang-col" data-io>
+            <h3><svg class="mark-no" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 4l10 10M14 4 4 14"/></svg>Not approved</h3>
+            <ul>
+              <li><svg class="mark-no" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 4l10 10M14 4 4 14"/></svg><span>"Richard Brown is a Best Lawyer."</span></li>
+              <li><svg class="mark-no" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 4l10 10M14 4 4 14"/></svg><span>"Richard Brown has been named a Texas Best Lawyer."</span></li>
+              <li><svg class="mark-no" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 4l10 10M14 4 4 14"/></svg><span>Any claim that recognition guarantees a result or endorses a product or service.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="terms-strip">
+          <div class="term" data-io style="--d:0ms"><b>Term</b><p>12 months from purchase, or until the next edition releases in your country.</p></div>
+          <div class="term" data-io style="--d:90ms"><b>Artwork</b><p>Approved form and colors only. No modifications or alterations.</p></div>
+          <div class="term" data-io style="--d:180ms"><b>Approvals</b><p>Ads and marketing materials go to admaterials@bestlawyers.com before production.</p></div>
+          <div class="term" data-io style="--d:270ms"><b>Timing</b><p>New awards stay quiet until the official release date for your country.</p></div>
+        </div>
+        <p class="terms-foot">General guidance summarized from the Best Lawyers publicizing guidelines. It is not legal advice. Bar advertising rules in your jurisdiction always apply.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap faq-grid">
+        <div>
+          <h2 class="h-display" data-reveal>Before you buy.</h2>
+          <p class="lede" data-reveal>Straight answers to the questions our licensing team hears every week.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can I buy just the badge, without a bigger package?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Yes. The licenses on this page are standalone. Choose the lawyer or firm license, and the official artwork is licensed for your approved channels. No profile package required.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Who is eligible to license a badge?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Lawyers and firms that appear in the current print or online Best Lawyers rankings. Eligibility comes from peer review, never from a purchase.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>How long does the license last?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">12 months from the date of purchase, or until the next publication of rankings in your country, whichever comes first.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can we recolor or crop the artwork to match our site?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">No. Logos and badges are used only in the form and colors indicated, without modifications. That consistency is what keeps the mark instantly recognizable, and it protects the value of your recognition along with everyone else's.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Does buying a badge affect rankings?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">No. Recognition comes only from the Purely Peer Review process, and no fees are accepted for consideration or inclusion. A license covers the display of official artwork. Nothing more.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can the badge go on a billboard or a TV ad?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Billboards, outdoor advertising, and television require the purchase of an additional license beyond the standard one on this page.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Where do advertisements get approved?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-a"><div class="faq-a-inner">After you clear your own bar's rules, send drafts of any press release, announcement, or advertisement using the Best Lawyers name to admaterials@bestlawyers.com before public release.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section section-dark final">
+      <div class="wrap final-inner" data-io>
+        <h2>The recognition is already yours.</h2>
+        <p>Make sure the people choosing a lawyer can see it.</p>
+        <a class="btn btn-gold" href="#pricing">
+          Buy Your Badge
+          <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-main">
+      <div class="footer-brand">
+        <a href="https://www.bestlawyers.com" target="_blank" rel="noopener noreferrer" aria-label="Best Lawyers home">
+          <img src="assets/brand/best-lawyers-white.png" alt="Best Lawyers" width="160" height="43" loading="lazy" />
+        </a>
+        <p>Best Lawyers&reg; is an elite global network of legal professionals recognized through trusted, peer-reviewed distinction. Recognition is earned through the opinions of fellow attorneys, not marketing influence or paid listings.</p>
+      </div>
+      <div class="footer-col">
+        <strong>Company</strong>
+        <a href="https://www.bestlawyers.com/about-us" target="_blank" rel="noopener noreferrer">About Us</a>
+        <a href="https://www.bestlawyers.com/methodology" target="_blank" rel="noopener noreferrer">Methodology Overview</a>
+      </div>
+      <div class="footer-col">
+        <strong>Legal</strong>
+        <a href="https://www.bestlawyers.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        <a href="https://www.bestlawyers.com/cookie-policy" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+        <a href="https://www.bestlawyers.com/terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a>
+      </div>
+    </div>
+    <div class="wrap footer-legal">
+      <p>Best Lawyers&reg;, Best Law Firms&reg;, Best Lawyers: Ones to Watch&reg;, and Purely Peer Review&reg; are registered trademarks of BL Rankings, LLC d/b/a Best Lawyers and Co., LLC. Logos and badges may only be used under license, in the form and colors indicated, accompanied by the required verbiage. The guidance on this page is general information and is not legal advice.</p>
+      <span>&copy; <span id="year"></span> Best Lawyers. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+  (() => {
+    "use strict";
+
+    /* ==========================================================
+       CONFIG
+       Single source of truth for pricing, purchase endpoints,
+       and embed behavior. Everything a stakeholder may change
+       lives here.
+       ========================================================== */
+    const CONFIG = {
+      pricing: {
+        currency: "USD",
+        /* PLACEHOLDER PRICING. Confirm both figures with the
+           pricing owner before launch. compareAt renders as a
+           struck-through previous list price when set; keep it
+           null unless the figure is a genuine former or standard
+           list price. */
+        lawyer: { price: 795, compareAt: null },
+        firm: { price: 1800, compareAt: 2400 }
+      },
+      purchase: {
+        /* INTEGRATION BOUNDARY. Production checkout endpoints
+           have not been supplied. Set the final purchase URLs
+           here; captured campaign parameters are appended
+           automatically. Until set, the buy buttons stay inert
+           and log a console notice. */
+        lawyerUrl: "",
+        firmUrl: ""
+      },
+      embed: {
+        /* Lock to the confirmed Instapage parent origin before
+           production, for example "https://www.bestlawyers.com". */
+        targetOrigin: "*",
+        messageSource: "bl-badges-logos"
+      }
+    };
+
+    const RM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const $ = (sel, ctx) => (ctx || document).querySelector(sel);
+    const $$ = (sel, ctx) => Array.from((ctx || document).querySelectorAll(sel));
+
+    /* ==========================================================
+       CAMPAIGN PARAMETER PRESERVATION
+       ========================================================== */
+    const KEEP_PARAMS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "fbclid", "msclkid"];
+    const preserved = (() => {
+      const incoming = new URLSearchParams(window.location.search);
+      const out = new URLSearchParams();
+      KEEP_PARAMS.forEach((k) => { if (incoming.has(k)) out.set(k, incoming.get(k)); });
+      return out;
+    })();
+    const withParams = (url) => {
+      if (![...preserved.keys()].length) return url;
+      try {
+        const u = new URL(url, window.location.href);
+        preserved.forEach((v, k) => { if (!u.searchParams.has(k)) u.searchParams.set(k, v); });
+        return u.toString();
+      } catch (e) { return url; }
+    };
+
+    /* ==========================================================
+       PRICING RENDER + PURCHASE LINKS
+       ========================================================== */
+    const money = (n) => new Intl.NumberFormat("en-US", {
+      style: "currency", currency: CONFIG.pricing.currency, maximumFractionDigits: 0
+    }).format(n);
+
+    ["lawyer", "firm"].forEach((kind) => {
+      const cfg = CONFIG.pricing[kind];
+      const priceEl = $('[data-price="' + kind + '"]');
+      const inlineEls = $$('[data-price-inline="' + kind + '"]');
+      const compareEl = $('[data-compare="' + kind + '"]');
+      const compareNote = $('[data-compare-note="' + kind + '"]');
+      if (priceEl) priceEl.textContent = money(cfg.price);
+      inlineEls.forEach((el) => { el.textContent = money(cfg.price); });
+      if (compareEl) {
+        if (cfg.compareAt && cfg.compareAt > cfg.price) {
+          compareEl.textContent = money(cfg.compareAt);
+          compareEl.hidden = false;
+          if (compareNote) compareNote.hidden = false;
+        } else {
+          compareEl.hidden = true;
+          if (compareNote) compareNote.hidden = true;
+        }
+      }
+      const url = CONFIG.purchase[kind + "Url"];
+      $$('[data-purchase="' + kind + '"]').forEach((a) => {
+        if (url) {
+          a.setAttribute("href", withParams(url));
+        } else {
+          a.addEventListener("click", (e) => {
+            e.preventDefault();
+            console.info("[bl-badges-logos] CONFIG.purchase." + kind + "Url is not set. Integration boundary: wire the production checkout endpoint in CONFIG before launch.");
+          });
+        }
+      });
+    });
+
+    /* Per-day figure derived from the live lawyer price so the
+       math always matches whatever pricing is configured. */
+    const perDayEl = $("[data-perday]");
+    if (perDayEl) {
+      const perDay = CONFIG.pricing.lawyer.price / 365;
+      perDayEl.textContent = "$" + perDay.toFixed(2);
+    }
+
+    /* ==========================================================
+       IFRAME HEIGHT BRIDGE  (Instapage embed methodology)
+       ========================================================== */
+    const inFrame = window.self !== window.top;
+    let lastH = 0;
+    const postHeight = () => {
+      const h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+      if (Math.abs(h - lastH) < 2) return;
+      lastH = h;
+      try {
+        window.parent.postMessage({ source: CONFIG.embed.messageSource, type: "height", height: h }, CONFIG.embed.targetOrigin);
+      } catch (e) { /* parent unavailable */ }
+    };
+    if (inFrame || true) {
+      let raf = 0;
+      const queue = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(postHeight); };
+      window.addEventListener("load", queue);
+      window.addEventListener("resize", queue);
+      if ("ResizeObserver" in window) new ResizeObserver(queue).observe(document.body);
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(queue);
+      window.addEventListener("message", (e) => {
+        if (e && e.data && e.data.type === "request-height") postHeight();
+      });
+      setTimeout(queue, 600);
+      setTimeout(queue, 2000);
+    }
+
+    /* ==========================================================
+       HEADER SHADOW
+       ========================================================== */
+    const header = $("#siteHeader");
+    const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 8);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    /* ==========================================================
+       REVEAL ENGINE
+       Generic [data-reveal] fades and [data-io] section hooks
+       that trigger each section's purpose-built sequence once.
+       ========================================================== */
+    const enter = (el) => {
+      el.classList.add("is-in");
+      if (el.matches(".hero")) { /* CSS-sequenced */ }
+      if (el.matches(".year-strips")) runPips(el);
+      if (el.matches(".search-scene")) runSearch(el);
+      if (el.matches(".stats-row")) runCounters(el);
+      if (el.matches(".wheel")) wheelInView = true;
+      if (el.matches(".receive-grid")) $$(".asset-card", el).forEach((c) => c.classList.add("is-in"));
+    };
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) { enter(en.target); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.22, rootMargin: "0px 0px -6% 0px" });
+      $$("[data-reveal], [data-io]").forEach((el) => io.observe(el));
+    } else {
+      $$("[data-reveal], [data-io]").forEach(enter);
+    }
+
+    /* ==========================================================
+       HERO PARALLAX  (scroll-linked, not looping)
+       ========================================================== */
+    if (!RM) {
+      const layers = $$("[data-parallax]");
+      let ticking = false;
+      const parallax = () => {
+        ticking = false;
+        const y = window.scrollY;
+        if (y > window.innerHeight * 1.2) return;
+        layers.forEach((el) => {
+          const f = parseFloat(el.getAttribute("data-parallax")) || 0;
+          el.style.translate = "0 " + (y * f * -1).toFixed(1) + "px";
+        });
+      };
+      window.addEventListener("scroll", () => {
+        if (!ticking) { ticking = true; requestAnimationFrame(parallax); }
+      }, { passive: true });
+    }
+
+    /* ==========================================================
+       ROI PIPS  (analytical fill)
+       ========================================================== */
+    const buildPips = (host) => {
+      const frag = document.createDocumentFragment();
+      for (let i = 0; i < 365; i++) {
+        const s = document.createElement("span");
+        s.className = "pip";
+        frag.appendChild(s);
+      }
+      host.appendChild(frag);
+    };
+    const confHost = $('[data-pips="conf"]');
+    const badgeHost = $('[data-pips="badge"]');
+    if (confHost && badgeHost) { buildPips(confHost); buildPips(badgeHost); }
+    const countUpTo = (el, target, ms) => {
+      if (!el) return;
+      if (RM) { el.textContent = String(target); return; }
+      const t0 = performance.now();
+      const step = (t) => {
+        const p = Math.min(1, (t - t0) / ms);
+        el.textContent = String(Math.round(target * (1 - Math.pow(1 - p, 3))));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    function runPips(scope) {
+      const conf = $$('[data-pips="conf"] .pip', scope);
+      const badge = $$('[data-pips="badge"] .pip', scope);
+      const litConf = [150, 151, 152];
+      if (RM) {
+        litConf.forEach((i) => conf[i] && conf[i].classList.add("lit"));
+        badge.forEach((p) => p.classList.add("lit"));
+        countUpTo($('[data-litcount="conf"]'), 3, 0);
+        countUpTo($('[data-litcount="badge"]'), 365, 0);
+        return;
+      }
+      litConf.forEach((i, n) => setTimeout(() => conf[i] && conf[i].classList.add("lit"), 300 + n * 140));
+      badge.forEach((p, i) => setTimeout(() => p.classList.add("lit"), 200 + i * 3));
+      countUpTo($('[data-litcount="conf"]'), 3, 700);
+      countUpTo($('[data-litcount="badge"]'), 365, 1400);
+    }
+
+    /* ==========================================================
+       REFERRAL SEARCH MOMENT
+       ========================================================== */
+    function runSearch(scene) {
+      const typeEl = $("[data-type]", scene);
+      const text = typeEl ? typeEl.getAttribute("data-type") : "";
+      if (RM || !typeEl) {
+        if (typeEl) typeEl.textContent = text;
+        scene.classList.add("done", "result", "verified");
+        return;
+      }
+      let i = 0;
+      const tick = () => {
+        typeEl.textContent = text.slice(0, ++i);
+        if (i < text.length) {
+          setTimeout(tick, 42 + Math.random() * 46);
+        } else {
+          scene.classList.add("done");
+          setTimeout(() => scene.classList.add("result"), 360);
+          setTimeout(() => scene.classList.add("verified"), 980);
+        }
+      };
+      setTimeout(tick, 420);
+    }
+
+    /* ==========================================================
+       INTEGRITY COUNTERS  (calm precision)
+       ========================================================== */
+    function runCounters(scope) {
+      $$("[data-count]", scope).forEach((el) => {
+        const target = parseFloat(el.getAttribute("data-count"));
+        const prefix = el.getAttribute("data-prefix") || "";
+        const suffix = el.getAttribute("data-suffix") || "";
+        if (RM) { el.textContent = prefix + target + suffix; return; }
+        const t0 = performance.now();
+        const ms = 1200;
+        const step = (t) => {
+          const p = Math.min(1, (t - t0) / ms);
+          const v = Math.round(target * (1 - Math.pow(1 - p, 3)));
+          el.textContent = prefix + v + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      });
+    }
+
+    /* ==========================================================
+       BADGE WHEEL  (the signature element)
+       ========================================================== */
+    const wheel = $(".wheel");
+    let wheelInView = false;
+    if (wheel) {
+      const items = $$(".wheel-item", wheel);
+      const nameEl = $("[data-wheel-name]");
+      const descEl = $("[data-wheel-desc]");
+      const caption = $(".wheel-caption");
+      const progress = $("[data-wheel-progress]");
+      const n = items.length;
+      let idx = 0;
+      let paused = false;
+      let timer = null;
+
+      items.forEach((it, i) => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.setAttribute("aria-label", "Show " + it.getAttribute("data-name"));
+        b.addEventListener("click", () => go(i, true));
+        progress.appendChild(b);
+      });
+      const dots = $$("button", progress);
+
+      const spacing = () => Math.min(320, wheel.clientWidth * 0.3);
+      const render = () => {
+        const gap = spacing();
+        items.forEach((it, i) => {
+          let o = i - idx;
+          if (o > n / 2) o -= n;
+          if (o < -n / 2) o += n;
+          const abs = Math.abs(o);
+          const visible = abs <= 2;
+          const scale = Math.max(0.55, 1 - abs * 0.2);
+          const op = abs === 0 ? 1 : abs === 1 ? 0.45 : abs === 2 ? 0.16 : 0;
+          it.style.transform = "translate(-50%, -50%) translateX(" + (o * gap).toFixed(1) + "px) scale(" + scale.toFixed(3) + ")";
+          it.style.opacity = String(visible ? op : 0);
+          it.style.zIndex = String(10 - abs);
+          it.setAttribute("aria-hidden", abs === 0 ? "false" : "true");
+        });
+        dots.forEach((d, i) => d.setAttribute("aria-current", i === idx ? "true" : "false"));
+      };
+      const setCaption = () => {
+        const it = items[idx];
+        const swap = () => {
+          nameEl.textContent = it.getAttribute("data-name");
+          descEl.textContent = it.getAttribute("data-desc");
+          caption.classList.remove("fading");
+        };
+        if (RM) { swap(); return; }
+        caption.classList.add("fading");
+        setTimeout(swap, 260);
+      };
+      const go = (i, user) => {
+        idx = ((i % n) + n) % n;
+        render();
+        setCaption();
+        if (user) rest();
+      };
+      const next = (user) => go(idx + 1, user);
+      const prev = (user) => go(idx - 1, user);
+
+      const AUTO_MS = 4800;
+      const start = () => {
+        if (RM || timer) return;
+        timer = setInterval(() => {
+          if (!paused && wheelInView && document.visibilityState === "visible") next(false);
+        }, AUTO_MS);
+      };
+      const rest = () => { paused = true; clearTimeout(rest._t); rest._t = setTimeout(() => { paused = false; }, 9000); };
+
+      $(".wheel-nav.next", wheel).addEventListener("click", () => next(true));
+      $(".wheel-nav.prev", wheel).addEventListener("click", () => prev(true));
+      items.forEach((it, i) => it.addEventListener("click", () => { if (i !== idx) go(i, true); }));
+      wheel.addEventListener("pointerenter", () => { paused = true; });
+      wheel.addEventListener("pointerleave", () => { paused = false; });
+      wheel.addEventListener("focusin", () => { paused = true; });
+      wheel.addEventListener("focusout", () => { paused = false; });
+      wheel.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") { e.preventDefault(); next(true); }
+        if (e.key === "ArrowLeft") { e.preventDefault(); prev(true); }
+      });
+
+      let dragX = null;
+      wheel.addEventListener("pointerdown", (e) => { dragX = e.clientX; });
+      window.addEventListener("pointerup", (e) => {
+        if (dragX === null) return;
+        const dx = e.clientX - dragX;
+        dragX = null;
+        if (Math.abs(dx) > 44) (dx < 0 ? next : prev)(true);
+      });
+
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver((es) => {
+          es.forEach((en) => { wheelInView = en.isIntersecting; });
+        }, { threshold: 0.15 }).observe(wheel);
+      } else {
+        wheelInView = true;
+      }
+      window.addEventListener("resize", render);
+      render();
+      start();
+    }
+
+    /* ==========================================================
+       CHANNEL TABS
+       ========================================================== */
+    const tabButtons = $$(".tab-btn");
+    const panes = $$(".pane");
+    const selectTab = (key) => {
+      tabButtons.forEach((b) => {
+        const on = b.getAttribute("data-tab") === key;
+        b.setAttribute("aria-selected", on ? "true" : "false");
+        b.tabIndex = on ? 0 : -1;
+      });
+      panes.forEach((p) => {
+        const on = p.getAttribute("data-pane") === key;
+        p.classList.toggle("active", on);
+        p.hidden = !on;
+      });
+    };
+    tabButtons.forEach((b, i) => {
+      b.addEventListener("click", () => selectTab(b.getAttribute("data-tab")));
+      b.addEventListener("keydown", (e) => {
+        if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+        e.preventDefault();
+        const d = e.key === "ArrowRight" ? 1 : -1;
+        const nb = tabButtons[(i + d + tabButtons.length) % tabButtons.length];
+        nb.focus();
+        selectTab(nb.getAttribute("data-tab"));
+      });
+    });
+
+    /* ==========================================================
+       FAQ ACCORDION  (one open at a time)
+       ========================================================== */
+    const faqItems = $$(".faq-item");
+    faqItems.forEach((item) => {
+      const q = $(".faq-q", item);
+      const a = $(".faq-a", item);
+      q.addEventListener("click", () => {
+        const isOpen = item.classList.contains("open");
+        faqItems.forEach((other) => {
+          if (other === item) return;
+          if (other.classList.contains("open")) {
+            const oa = $(".faq-a", other);
+            oa.style.height = oa.scrollHeight + "px";
+            requestAnimationFrame(() => { oa.style.height = "0px"; });
+            other.classList.remove("open");
+            $(".faq-q", other).setAttribute("aria-expanded", "false");
+          }
+        });
+        if (isOpen) {
+          a.style.height = a.scrollHeight + "px";
+          requestAnimationFrame(() => { a.style.height = "0px"; });
+          item.classList.remove("open");
+          q.setAttribute("aria-expanded", "false");
+        } else {
+          item.classList.add("open");
+          q.setAttribute("aria-expanded", "true");
+          a.style.height = a.scrollHeight + "px";
+          const clear = () => { if (item.classList.contains("open")) a.style.height = "auto"; a.removeEventListener("transitionend", clear); };
+          a.addEventListener("transitionend", clear);
+          if (RM) a.style.height = "auto";
+        }
+      });
+    });
+
+    /* ==========================================================
+       YEAR STAMP
+       ========================================================== */
+    const yearEl = $("#year");
+    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+  })();
+  </script>
+</body>
+</html>

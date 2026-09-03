@@ -1,0 +1,53 @@
+<!--
+  INSTAPAGE EMBED SNIPPET
+  Same migration methodology as the Premier Profile Placement page.
+
+  1. Deploy this package to Netlify and copy the live URL.
+  2. In Instapage, add an HTML widget where the page should render.
+  3. Paste everything below and replace NETLIFY_URL (both places).
+
+  What the snippet does:
+  a. Forwards the parent page's campaign parameters (utm_*, gclid,
+     fbclid, msclkid) onto the iframe src, so the landing page can
+     append them to the purchase links.
+  b. Listens for height messages from the page and resizes the
+     iframe, so there is never a nested scrollbar.
+  c. Never redirects the parent. All outbound links inside the
+     page open in a new tab.
+-->
+
+<iframe
+  id="bl-badges-logos"
+  src="NETLIFY_URL"
+  title="Best Lawyers Badges and Logos"
+  width="100%"
+  height="1200"
+  style="width:100%;border:0;display:block;"
+  loading="eager"
+  scrolling="no"
+></iframe>
+
+<script>
+(function () {
+  var frame = document.getElementById("bl-badges-logos");
+  var origin = "NETLIFY_URL"; // used to verify message origin
+
+  // Forward campaign parameters from the parent URL to the iframe.
+  var keep = ["utm_source","utm_medium","utm_campaign","utm_term","utm_content","gclid","fbclid","msclkid"];
+  try {
+    var parentQ = new URLSearchParams(window.location.search);
+    var src = new URL(frame.src);
+    keep.forEach(function (k) {
+      if (parentQ.has(k)) src.searchParams.set(k, parentQ.get(k));
+    });
+    frame.src = src.toString();
+  } catch (e) { /* leave src as configured */ }
+
+  // Resize the iframe from the page's height messages.
+  window.addEventListener("message", function (e) {
+    if (!e.data || e.data.source !== "bl-badges-logos" || e.data.type !== "height") return;
+    try { if (origin !== "NETLIFY_URL" && e.origin !== new URL(origin).origin) return; } catch (err) {}
+    frame.style.height = e.data.height + "px";
+  });
+})();
+</script>

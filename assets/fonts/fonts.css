@@ -1,0 +1,73 @@
+/* ==========================================================
+   BRAND FONTS
+   Gentleman (display — headers) and Optima (sans — body).
+
+   Gentleman ships as WOFF. Optima ships as TTF, converted here
+   to WOFF for cross-browser support (all modern browsers).
+   WOFF2 would shave ~20% further; drop the licensed WOFF2 files
+   in and add a src url() line with format("woff2") ahead of
+   the woff line when they become available.
+
+   font-display: swap — text stays visible in the system fallback
+   while the files load, preventing invisible-text flashes.
+   ========================================================== */
+
+/* ── GENTLEMAN (headers, display surfaces) ── */
+@font-face {
+  font-family: "Gentleman";
+  src: url("gentleman-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gentleman";
+  src: url("gentleman-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gentleman";
+  src: url("gentleman-bold.woff") format("woff");
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gentleman";
+  src: url("gentleman-black.woff") format("woff");
+  font-weight: 800 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── OPTIMA (body, UI, navigation, buttons) ── */
+@font-face {
+  font-family: "Optima";
+  src: url("optima-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Optima";
+  src: url("optima-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Optima";
+  src: url("optima-bold.woff") format("woff");
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Optima";
+  src: url("optima-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

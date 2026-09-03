@@ -1,0 +1,10 @@
+{
+  "name": "best-lawyers-badges-logos-landing-page",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Best Lawyers Badges and Logos sales landing page. Static build, iframe-safe, Instapage-ready.",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "validate": "node scripts/validate.mjs"
+  }
+}
